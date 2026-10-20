@@ -1,14 +1,16 @@
 # POTD Day 1 – Letter
 
 **Platform:** Codeforces
+
 **Problem link:** https://codeforces.com/contest/14/problem/A
+
 **Difficulty:** Beginner
 
 ## Problem 
 The first line of the input data contains numbers n and m (1 ≤ n, m ≤ 50), n — amount of lines, and m — amount of columns on Bob's sheet. The following n lines contain m characters each. 
 
 
-## My approach
+## My Approach
 1. **Input:** Read `n` and `m`, then store all rows in the `boxes` list.
 2. **Find Column Boundaries:** Use `index('*')` and `rindex('*')` to find the leftmost (`min`) and rightmost (`max`) shaded columns.
 3. **Find the First Shaded Row:** Locate the first row containing `*` and store its index in `rank1`.
