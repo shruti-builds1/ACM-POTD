@@ -8,8 +8,6 @@
 The first line contains a non-empty string s. String s contains no spaces. It only contains digits and characters "+". Besides, string s is a correct sum of numbers 1, 2 and 3. Output should display the sum in ascending order. String s is at most 100 characters long.
 
 ## My approach
-## Approach
-
 1. **Take Input:** Read the given sum as a string and remove any leading or trailing whitespace using `strip()`.
 2. **Count Occurrences:** Use the `count()` method to count the occurrences of `1`, `2`, and `3` in the string and store them in `num1`, `num2`, and `num3`, respectively.
 3. **Handle Single-Digit Sums:** Check whether the string contains only one type of digit. If so, print the original string as it is, since the numbers are already in non-decreasing order.
