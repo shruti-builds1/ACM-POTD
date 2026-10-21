@@ -1,7 +1,7 @@
 # POTD Day 21 – Helpful Maths
 **Platform:** Codeforces
 
-# Problem 1
+## PROBLEM 1
 **Problem link:** https://codeforces.com/problemset/problem/339/A
 **Difficulty:** Beginner
 
@@ -54,3 +54,60 @@ else:
 ### Proof of acceptance
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8ec25721-158c-4f86-a11f-eb76bb8ad1ff" />
 
+## PROBLEM 2
+**Problem link:** https://codeforces.com/contest/120/problem/A
+**Difficulty:** Intermediate
+
+### Problem 
+A skyscraper has an elevator with two doors (front and back) and two rails (1 and 2). A person enters through one door and holds a rail with their strongest hand. Determine whether the person is left-handed (L) or right-handed (R) based on the entrance door and rail number.
+
+#### Input
+- The first line contains the entrance door: front or back.
+- The second line contains an integer a (1 ≤ a ≤ 2), representing the rail number.
+
+#### Output
+Print L if the person is left-handed or R if the person is right-handed.
+
+### My approach
+1. **Open input.txt file:** Extract the lines from the file using readlines() and store the values in door and rail.
+2. **Handle cases:** print output as per the problem and also handle errors where user may enter wrong door or rail number.
+
+### Solution
+```python
+with open('input.txt','r') as f :
+    data=f.readlines()
+    door=data[0].rstrip('\n')
+    rail=data[1].rstrip('\n')
+    # print(door, rail)
+    if door=='front' :
+        if rail=='1' :
+            with open('output.txt','w') as file :
+                file.write('L')
+        elif rail=='2' :
+            with open('output.txt','w') as file :
+                file.write('R')
+        else:
+            print(f'The elevator has 2 rails only!')
+        
+
+    elif door=='back' :
+        if rail=='2' :
+            with open('output.txt','w') as file :
+                file.write('L')
+        elif rail=='1' :
+            with open('output.txt','w') as file :
+                file.write('R')
+        else:
+            print(f'The elevator has 2 rails only!')
+
+    else:
+        print(f'The elevator has only 2 doors!')
+
+```
+
+### Proof of acceptance
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ee03fdf4-46ef-476b-968f-bbea51db9495" />
+
+
+
+##
