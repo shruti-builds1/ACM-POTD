@@ -1,19 +1,23 @@
-# POTD Day 21 – Helpful Maths
+# POTD Day 21 
 **Platform:** Codeforces
 
-## PROBLEM 1
+## PROBLEM 1 – Helpful Maths
 **Problem link:** https://codeforces.com/problemset/problem/339/A
 **Difficulty:** Beginner
 
 ### Problem 
-The first line contains a non-empty string s. String s contains no spaces. It only contains digits and characters "+". Besides, string s is a correct sum of numbers 1, 2 and 3. Output should display the sum in ascending order. String s is at most 100 characters long.
+Xenia can calculate a sum only if the summands follow in non-decreasing order. The sum only contains numbers 1, 2 and 3. You've got the sum that was written on the board. Rearrange the summans and print the sum in such a way that Xenia can calculate the sum.
+#### Input
+The first line contains a non-empty string s — the sum Xenia needs to count. It contains only contains digits and characters "+" and no spaces. Besides, string s is a correct sum of numbers 1, 2 and 3. String s is at most 100 characters long.
+#### Output
+Print the new sum that Xenia can count.
 
 ### My approach
-1. **Take Input:** Read the given sum as a string and remove any leading or trailing whitespace using `strip()`.
-2. **Count Occurrences:** Use the `count()` method to count the occurrences of `1`, `2`, and `3` in the string and store them in `num1`, `num2`, and `num3`, respectively.
+1. **Take Input:** Read the given sum as a string and remove any leading or trailing whitespace using strip().
+2. **Count Occurrences:** Use the count() method to count the occurrences of 1, 2, and 3 in the string and store them in num1, num2, and num3, respectively.
 3. **Handle Single-Digit Sums:** Check whether the string contains only one type of digit. If so, print the original string as it is, since the numbers are already in non-decreasing order.
-4. **Arrange the Digits:** If the sum contains more than one type of digit, print all occurrences of `1`, followed by `2`, and then `3`, ensuring that the numbers appear in ascending order.
-5. **Handle Separators:** Use `+` between consecutive numbers and avoid an extra `+` at the end of the output.
+4. **Arrange the Digits:** If the sum contains more than one type of digit, print all occurrences of 1, followed by 2, and then 3, ensuring that the numbers appear in ascending order.
+5. **Handle Separators:** Use + between consecutive numbers and avoid an extra + at the end of the output.
 6. **Validate Input Length:** Check whether the input string is at most 100 characters long, as specified in the problem statement.
 
 ### Solution
@@ -54,7 +58,7 @@ else:
 ### Proof of acceptance
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8ec25721-158c-4f86-a11f-eb76bb8ad1ff" />
 
-## PROBLEM 2
+## PROBLEM 2 - Elevator
 **Problem link:** https://codeforces.com/contest/120/problem/A
 **Difficulty:** Intermediate
 
