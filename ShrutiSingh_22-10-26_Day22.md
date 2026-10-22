@@ -53,6 +53,48 @@ else :
 ### Proof of acceptance
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ab963c0d-4457-4ed4-8111-fcd63903aae5" />
 
+## PROBLEM 1 – cAPS lOCK
+**Problem link:** https://codeforces.com/problemset/problem/131/A
+**Difficulty:** Intermediate
+
+### Problem 
+Let's consider that a word has been typed with the Caps lock key accidentally switched on, if:
+- either it only contains uppercase letters;
+- or all letters except for the first one are uppercase.
+In this case we should automatically change the case of all letters. Write a program that applies the rule mentioned above. If the rule cannot be applied, the program should leave the word unchanged.
+#### Input
+The first line of the input data contains a word consisting of uppercase and lowercase Latin letters. The word's length is from 1 to 100 characters, inclusive.
+#### Output
+Print the result of the given word's processing.
+
+### My approach
+1. **Take Input:** Take string input from user.
+2. **Handle cases:** First check the length of input, then display the output accordingly using isupper(), .islower(), .lower(), and .upper() .
+   
+### Solution
+```python
+user=input().strip()
+if len(user)==1 :
+    if user.islower():
+        print(user.upper())
+    else:
+        print(user.lower())
+elif 1<len(user)<=100 :
+    if user.isupper() :
+        print(user.lower())
+    elif user[0].islower() and user[1:len(user)].isupper() :
+        print(user[0].upper()+user[1:len(user)].lower())
+    else :
+        print(user)
+
+else:
+    print('The input should be 1 to 100 characters long!')    
+```
+
+### Proof of acceptance
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5d9e3117-8fe6-4277-9f62-bc7289ddb53b" />
+
+
 
 
 
