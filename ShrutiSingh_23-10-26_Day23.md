@@ -6,7 +6,7 @@
 **Difficulty:** Beginner
 
 ### Problem 
-In an auction winner pay not the price she/he offers, but the highest price among the offers of other participants (hence the name: the second-price auction).
+In an auction, winner pay not the price she/he offers, but the highest price among the offers of other participants (hence the name: the second-price auction).
 Write a program that reads prices offered by bidders and finds the winner and the price she/he will pay. Consider that all of the offered prices are different.
 #### Input
 The first line of the input contains n (2 ≤ n ≤ 1000) — number of bidders. The second line contains n distinct integer numbers p1, p2, ... pn, separated by single spaces (1 ≤ pi ≤ 10000), where pi stands for the price offered by the i-th bidder.
