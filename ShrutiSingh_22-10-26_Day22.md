@@ -53,7 +53,7 @@ else :
 ### Proof of acceptance
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ab963c0d-4457-4ed4-8111-fcd63903aae5" />
 
-## PROBLEM 1 – cAPS lOCK
+## PROBLEM 2 – cAPS lOCK
 **Problem link:** https://codeforces.com/problemset/problem/131/A
 **Difficulty:** Intermediate
 
