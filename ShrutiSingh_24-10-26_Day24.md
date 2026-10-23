@@ -20,7 +20,7 @@ If the password is complex enough, print message "Correct" (without the quotes),
 ### My approach
 1. **Take Input:** Take password from the user.
 2. **Handle cases:** First check if the length of password is in required range, then check for atleast 1 small letter, 1 large letter, 1 digit and one of the characters: "!", "?", ".", ",", "_"(if special characters are present) using .isupper(), islower(), isdigit(), and .islanum(). 
-3. **Display ** Print "Correct" and "Too weak" according to the requirement .
+3. **Display:** Print "Correct" and "Too weak" according to the requirement .
 
 ### Solution
 ```python
