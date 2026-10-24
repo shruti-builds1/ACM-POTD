@@ -155,9 +155,8 @@ The only line contains an integer n (1 ≤ n ≤ 10000).
 Print two non-negative space-separated integers a and b, where a is the numbers of feet and b is the number of inches.
 
 ### My approach
-1. **Take Input:** Get the number of boys and girls in the room.
-2. **Handle cases:** First check if the number of boys and girls are in required range, then make a dictionary to know the status of all dancers (i.e, if they are dancing for first time or not), then handling cases according to number of boys and girls. 
-3. **Display:** Display the number of possible ways and all the ways.
+1. **Take Input:** Get the measurement in centimeters.
+2. **Handle cases and Display:** First check if the number is in required range, then calculate feet and inch, then print accordingly. 
 
 ### Solution
 ```python
