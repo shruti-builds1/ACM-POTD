@@ -1,4 +1,4 @@
-# POTD Day 1 – Letter
+# POTD Day 1 
 
 **Platform:** Codeforces
 
@@ -6,7 +6,7 @@
 
 **Difficulty:** Beginner
 
-## Problem 
+## PROBLEM 1- Letter
 The first line of the input data contains numbers n and m (1 ≤ n, m ≤ 50), n — amount of lines, and m — amount of columns on Bob's sheet. The following n lines contain m characters each. 
 
 
