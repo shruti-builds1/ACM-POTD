@@ -1,16 +1,15 @@
 # POTD Day 1 
-
 **Platform:** Codeforces
 
+## PROBLEM 1- Letter
 **Problem link:** https://codeforces.com/contest/14/problem/A
-
 **Difficulty:** Beginner
 
-## PROBLEM 1- Letter
-The first line of the input data contains numbers n and m (1 ≤ n, m ≤ 50), n — amount of lines, and m — amount of columns on Bob's sheet. The following n lines contain m characters each. 
+### Problem
+The first line of the input data contains numbers n and m (1 ≤ n, m ≤ 50), n — amount of lines, and m — amount of columns on Bob's sheet. The 
+following n lines contain m characters each. 
 
-
-## My Approach
+### My Approach
 1. **Input:** Read `n` and `m`, then store all rows in the `boxes` list.
 2. **Find Column Boundaries:** Use `index('*')` and `rindex('*')` to find the leftmost (`min`) and rightmost (`max`) shaded columns.
 3. **Find the First Shaded Row:** Locate the first row containing `*` and store its index in `rank1`.
@@ -18,7 +17,7 @@ The first line of the input data contains numbers n and m (1 ≤ n, m �
 5. **Handle Cases:** If gaps exist, print all rows between the first and last shaded rows; otherwise, print only rows containing `*`.
 6. **Extract the Rectangle:** Use `boxes[j][min:max+1]` to extract and print the required columns.
 
-## Solution
+### Solution
 ```python
 data=input()
 n, m = data.strip().split(' ')
@@ -66,6 +65,6 @@ else :
 
 ```
 
-## Proof of acceptance
+### Proof of acceptance
 <img width="1920" height="1080" alt="Screenshot 2026-10-20 223100" src="https://github.com/user-attachments/assets/1c8319cf-bb02-45b9-ab45-10d62b6aa7e4" />
 
