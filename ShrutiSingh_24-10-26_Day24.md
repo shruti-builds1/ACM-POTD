@@ -141,5 +141,58 @@ else:
 ### Proof of acceptance
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/aadd1dad-818e-4d60-9e93-fc498f71b254" />
 
+## PROBLEM 3 – Measuring Lengths in Baden
+**Problem link:** https://codeforces.com/problemset/problem/125/A
+**Difficulty:** Advanced
+
+### Problem 
+Lengths are measures in Baden in inches and feet. To a length from centimeters it is enough to know that an inch equals three centimeters in Baden and one foot contains 12 inches.
+You are given a length equal to n centimeters. Your task is to convert it to feet and inches so that the number of feet was maximum. The result should be an integer rounded to the closest value containing an integral number of inches.
+Note that when you round up, 1 cm rounds up to 0 inches and 2 cm round up to 1 inch.
+#### Input
+The only line contains an integer n (1 ≤ n ≤ 10000).
+#### Output
+Print two non-negative space-separated integers a and b, where a is the numbers of feet and b is the number of inches.
+
+### My approach
+1. **Take Input:** Get the number of boys and girls in the room.
+2. **Handle cases:** First check if the number of boys and girls are in required range, then make a dictionary to know the status of all dancers (i.e, if they are dancing for first time or not), then handling cases according to number of boys and girls. 
+3. **Display:** Display the number of possible ways and all the ways.
+
+### Solution
+```python
+cm=int(input())
+if 1<=cm<=10000 :
+    # foot=0
+    # inch=0
+    foot=cm//36
+    inch=(cm%36)//3
+    if (cm%36)%3==1 or (cm%36)%3==0:
+        if inch==12:
+            foot+=1
+            inch=0
+            print(foot,inch)
+
+        else:
+            print(foot,inch)
+
+    elif (cm%36)%3==2 :
+        inch+=1
+        if inch==12:
+            foot+=1
+            inch=0
+            print(foot,inch)
+
+        else:
+            print(foot,inch)
+        
+else:
+    print('The integer should be in range 1 ≤ n ≤ 10000.')
+```
+
+### Proof of acceptance
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5e0adfca-f8fb-43a0-aad8-fd7474499ca1" />
+
+
 
 
