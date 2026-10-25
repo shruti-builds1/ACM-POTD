@@ -59,6 +59,57 @@ else:
 ### Proof of acceptance
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bd2e1b3b-0979-4e92-9d0f-587ea9fbf700" />
 
+## PROBLEM 2 – Candy Bags
+**Problem link:** https://codeforces.com/problemset/problem/334/A
+**Difficulty:** Intermediate
+
+### Problem 
+Gerald has an even number n of younger brothers and n^2 candy bags containing 1,2,...,n^2 candies, one bag per number. Distribute exactly n bags to each brother so that every brother receives the same total number of candies.
+#### Input
+A single even integer n (2<=n<=100).
+#### Output
+Print n lines, each containing n distinct integers from 1 to n^2, representing the bags given to each brother. Every integer must appear exactly once, and all brothers must receive the same total number of candies.
+
+### My approach
+1. **Take Input:** Take integer input from the user.
+2. **Handle cases:** First check if the input fulfills the requirement, then create a dictionary to store the bags that is to be given t the brothers. Moving forward, using for loops to assign the bags.
+3. **Display:** Display the elements of values(i.e., a list) of dictionary.
+
+### Solution
+```python
+user=int(input())
+if 2<=user<=100 and user%2==0 :
+    D={}
+    for k in range(1,user+1):
+        D.update({str(k):[]})
+
+    # print(D)
+
+    L=[]
+    for i in range(1, user**2+1):
+        L.append(i)
+
+    for j,v in D.items():
+        for k in range(user//2):
+            candy1=L.pop(0)
+            v.append(candy1)
+
+        for j in range(user//2):
+            candy2=L.pop(-1)
+            v.append(candy2)
+
+    for l,m in D.items():
+        for i in m:
+            print(i,end=' ')
+        print()
+        
+
+else:
+    print('The input should be even and in required range(2 ≤ n ≤ 100)')
+```
+
+### Proof of acceptance
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4c9c4257-4d4a-4e11-a54f-c694a1fc0865" />
 
 
 
