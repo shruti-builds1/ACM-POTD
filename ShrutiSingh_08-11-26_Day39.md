@@ -15,7 +15,7 @@ Print the last two digits of 5^n.
 
 ### My approach
 1. **Get Input:** Prompt the user for integer input.
-2. **Display:** Display 25, since a value obtained when any number in power of 5, always ends with 25.
+2. **Display:** Display 25, since a value obtained when any positive number(except 1) in power of 5, always ends with 25.
 
 ### Solution
 ```python
