@@ -52,6 +52,50 @@ if __name__=="__main__" :
 ### Proof of acceptance
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/500d90cc-2a14-48bd-94af-541cc7b152e4" />
 
+## PROBLEM 2 – Fancy Fence
+**Problem link:** https://codeforces.com/problemset/problem/270/A
+**Difficulty:** Intermediate
+
+### Problem 
+Emuskald wants a regular polygon-shaped fence, but his robot can only make corners at a fixed angle a.
+Determine whether a regular polygon with an interior angle of a can exist.
+#### Input
+The first line contains t (0 < t < 180), the number of test cases. Each of the next t lines contains an integer a (0 < a < 180), the corner angle in degrees.
+#### Output
+For each test case, print "YES" if such a regular polygon exists, otherwise print "NO".
+
+### My approach
+1. **Define main():** In this function you get input from user and call another function fence(user) (user-defined) to solve the problem.
+2. **Define fence(user):** In this user defined function, we pass the input as the argument in the function, then create a dictionary D to store angles as keys and "NO"/"YES" as values. Iterate over a range(user) and prompt for the angles and store them in D with initially "NO" as their values. Now iterate over D and check whether the key satisfies the equation: a= ((n-2) X 180)/n and n==int(n) ,if True the value of that key changes to "YES" otherwise, remains unchanged. Display the values in D.
+4. **Function call:** main() is invoked.
+
+### Solution
+```python
+def main() :
+    prompt=int(input())
+    fence(prompt)
+
+def fence(user) :
+    D={}
+    for j in range(user):
+        prompt2=int(input())
+        D[prompt2]="NO"
+
+    for k in D :
+        n=360/(180-k)
+        # print(n)
+        if n==int(n) :
+            D[k]="YES"
+
+    for i in D.values() :
+        print(i)
+
+if __name__=="__main__" :
+    main()
+```
+
+### Proof of acceptance
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6c6d14b6-959d-4c95-b32a-832fd85076bb" />
 
 
 
