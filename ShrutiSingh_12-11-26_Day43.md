@@ -62,7 +62,7 @@ The count of successfully stored numbers.
 
 ### My approach
 1. **Define main():** In this function you get input from user and call another function virus(user) (user-defined) to solve the problem.
-2. **Pattern:** We notice that from 1 to 10 we have 2 values only. Also 1*2**1 + 0*2**0 equals 2 (atarting from right, multiply the digits with 2**n; n=0,1,2,...). but, when we enter a number which contains another digit other than 0 and 1, then we look for number less than that no. and if the number is greater than 1*(length of entered number), it is observed that the lowest will always be 1*(length of entered number), otherwise we replace the digits starting from the index where the first digit comes out to be not 0 and 1. 
+2. **Pattern:** We notice that from 1 to 10 we have 2 values only. Also 1*2**1 + 0*2**0 equals 2 (atarting from right, multiply the digits with 2 **n; n=0,1,2,...). but, when we enter a number which contains another digit other than 0 and 1, then we look for number less than that no. and if the number is greater than 1*(length of entered number), it is observed that the lowest will always be 1*(length of entered number), otherwise we replace the digits starting from the index where the first digit comes out to be not 0 and 1. 
 3. **Define virus(user):** In this user defined function, we pass the input as the argument in the function, then create a set my_set storing '0' and '1'. convert the user to set and then check if user is not subset of my_set and int(user)>'1'*len(user), then for user is not subset of my_set and int(user)<'1'*len(user), user is updated as required. Now calculate the sum and display it.
 4. **Function call:** main() is invoked.
 
